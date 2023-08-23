@@ -5,6 +5,7 @@ import Employees from "./pages/Employees";
 import Statistics from "./pages/Statistics";
 import Tables from "./pages/Tables";
 import Wallet from "./pages/Wallet";
+import Auth from "./pages/Auth";
 import SideBar from "./components/SideBar";
 
 const App = () => {
@@ -14,7 +15,8 @@ const App = () => {
         <div className="App">
           <SideBar />
           <Routes>
-            <Route path="/" element= {<Statistics />}/>
+            <Route path="/" element= {<Auth />}/>
+            <Route path="/estatisticas" element= {<Statistics />}/>
             <Route path="/tabelas" element= {<Tables />}/>
             <Route path="/compras" element= {<Wallet />}/>
             <Route path="/funcionarios" element= {<Employees />}/>
