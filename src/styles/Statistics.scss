@@ -1,0 +1,134 @@
+@import '../styles/variables.scss';
+
+.sttContainer {
+   width: 100%;
+   padding: 20px;
+   font-family: $Sofia;
+
+   .sttContainer-top {
+      width: 100%;
+      height: 300px;
+
+      .topInfo {
+         display: flex;
+
+         .topInfo-left {
+            width: 50%;
+            height: 100%;
+
+            h2 {
+               font-size: 1.2rem;
+               color: $grayDark;
+               font-weight: 500;
+               margin-bottom: 20px;
+            }
+
+            h1 {
+               font-size: 1.8rem;
+               color: $grayDark;
+               margin-bottom: 10px;
+            }
+
+            h3 {
+               font-size: 1rem;
+               color: $grayDark;
+               font-weight: 500;
+            }
+         }
+
+         .topInfo-right {
+            width: 50%;
+            height: 100%;
+            position: relative;
+
+            .search-container {
+               position: absolute;
+               width: 200px;
+               height: 30px;
+               right: 200px;
+               top: 30px;
+
+               img {
+                  position: absolute;
+                  z-index: 1;
+                  cursor: pointer;
+                  width: 20px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  left: 10px;
+               }
+
+               input {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 5px;
+                  border: 1px solid $gray;
+                  padding-left: 40px;
+               }
+            }
+
+            .btn-opt {
+               position: absolute;
+               top: 32px;
+               right: 130px;
+            }
+
+            .btn-notf {
+               position: absolute;
+               top: 32px;
+               right: 80px;
+            }
+
+            .icon-user {
+               position: absolute;
+               right: 10px;
+               top: 20px;
+            }
+
+            .btn-msg {
+               position: absolute;
+               top: 100px;
+               right: 230px;
+               width: 110px;
+               height: 40px;
+               background-color: #ffff;
+               border-radius: 5px;
+               border: 1px solid $gray;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               cursor: pointer;
+               color: $grayDark;
+               transition: all .2s;
+
+               &:hover {
+                  top: 115px;
+                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+               }
+            }
+
+            .btn-sinc {
+               position: absolute;
+               right: 90px;
+               top: 100px;
+               width: 110px;
+               height: 40px;
+               background-color: $secondaryColor;
+               border-radius: 5px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               color: #ffff;
+               cursor: pointer;
+               transition: all .2s;
+
+               &:hover {
+                  top: 115px;
+                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+               }
+            }
+         }
+      }
+   }
+}
