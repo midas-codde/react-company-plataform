@@ -31,7 +31,7 @@ const Auth = () => {
                      <label htmlFor="box">Lembrar-me durante 1 mês</label>
                      <p>Esqueceu sua senha?</p>
                   </div>
-                  <a className="button-login" href="">Logar</a>
+                  <a className="button-login" href="/estatisticas">Logar</a>
                   <p>Não possui conta? <span>Registre-se</span></p>
                </div>
                <div className="auth-right">
@@ -53,7 +53,7 @@ const Auth = () => {
                      <input type="checkbox" name="box" id="radio" />
                      <label htmlFor="box">Eu aceito os Termos de condições</label>
                   </div>
-                  <a className="button-login" href="">Logar</a>
+                  <a className="button-login" href="/estatisticas">Logar</a>
                   <p>Já possui conta? <span>Entrar</span></p>
                </div>
                <div className="container-img">
