@@ -1,9 +1,12 @@
+import SideBar from "../components/SideBar"
+
 const Chat = () => {
    return (
-     <>
-       <h1>Chat</h1>
-     </>
+      <>
+         <SideBar />
+         <h1 className="title">Chat</h1>
+      </>
    )
- }
- 
- export default Chat
+}
+
+export default Chat

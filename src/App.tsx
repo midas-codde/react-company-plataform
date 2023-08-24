@@ -6,14 +6,12 @@ import Statistics from "./pages/Statistics";
 import Tables from "./pages/Tables";
 import Wallet from "./pages/Wallet";
 import Auth from "./pages/Auth";
-import SideBar from "./components/SideBar";
 
 const App = () => {
   return (
     <>
       <Router>
         <div className="App">
-          <SideBar />
           <Routes>
             <Route path="/" element= {<Auth />}/>
             <Route path="/estatisticas" element= {<Statistics />}/>

@@ -1,9 +1,12 @@
+import SideBar from "../components/SideBar"
+
 const Wallet = () => {
-   return (
-     <>
-       <h1>Wallet</h1>
-     </>
-   )
- }
- 
- export default Wallet
+	return (
+		<>
+			<SideBar />
+			<h1 className="title">Wallet</h1>
+		</>
+	)
+}
+
+export default Wallet

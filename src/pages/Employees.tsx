@@ -1,9 +1,12 @@
+import SideBar from "../components/SideBar"
+
 const Employees = () => {
    return (
-     <>
-       <h1>Employees</h1>
-     </>
+      <>
+         <SideBar />
+         <h1 className="title">Employees</h1>
+      </>
    )
- }
- 
- export default Employees
+}
+
+export default Employees

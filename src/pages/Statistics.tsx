@@ -1,9 +1,12 @@
+import SideBar from "../components/SideBar"
+
 const Statistics = () => {
    return (
-     <>
-       <h1>Statistics</h1>
-     </>
+      <>
+         <SideBar />
+         <h1 className="title">Estatisticas</h1>
+      </>
    )
- }
- 
- export default Statistics
+}
+
+export default Statistics

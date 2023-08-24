@@ -1,9 +1,12 @@
+import SideBar from "../components/SideBar"
+
 const Tables = () => {
    return (
-     <>
-       <h1>Tables</h1>
-     </>
+      <>
+         <SideBar />
+         <h1 className="title">Tables</h1>
+      </>
    )
- }
- 
- export default Tables
+}
+
+export default Tables

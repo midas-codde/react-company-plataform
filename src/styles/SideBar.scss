@@ -1,0 +1,171 @@
+@import '../styles/variables.scss';
+
+.side-bar {
+   width: 180px;
+   height: 100vh;
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #ffff;
+   box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.50);
+   transition: all 0.5s;
+
+   .btnOpt {
+      position: absolute;
+      right: -13px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: $primaryColor;
+      top: 88px;
+      cursor: pointer;
+      z-index: 2;
+
+      .btnTrigger {
+         content: '';
+         width: 25px;
+         height: 25px;
+         cursor: pointer;
+         background-color: red;
+         z-index: 3;
+         opacity: 0;
+         transition: all 0.5s;
+      }
+
+      .btnMenu {
+         content: '';
+         background-color: $primaryColor;
+         position: relative;
+         z-index: 2;
+         width: 15px;
+         height: 3px;
+         border-radius: 2rem;
+         bottom: calc(25px/2);
+         left: 50%;
+         transform: translateX(-50%);
+         transition: all 0.5s;
+      }
+
+      .btnMenu::after {
+         content: '';
+         background-color: #ffff;
+         position: absolute;
+         width: 15px;
+         height: 3px;
+         border-radius: 2rem;
+         top: 0.3rem;
+         transform: translateY(-0.3rem) rotate(45deg);
+         transition: all 0.5s;
+      }
+      .btnMenu::before {
+         content: '';
+         background-color: #ffff;
+         position: absolute;
+         width: 15px;
+         height: 3px;
+         border-radius: 2rem;
+         top: -0.3rem;
+         transform: translateY(0.3rem) rotate(-45deg);
+         transition: all 0.5s;
+      }
+   }
+
+   .btnOpt::after {
+      content: '';
+      position: absolute;
+      right: 25px;
+      top: 12px;
+      z-index: 1;
+      width: calc(6rem + 15rem);
+      background-color: #b7b7b74f;
+      height: 2px;
+      pointer-events: none;
+   }
+
+   .line {
+      top: 100px;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      background-color: #b7b7b760;
+      z-index: 1;
+   }
+
+   .logo-container {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      transition: all 0.5s;
+
+      img {
+         width: 100px;
+      }
+   }
+
+   a {
+      text-decoration: none;
+      width: 80%;
+      height: 40px;
+      margin: 7px 0px;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      font-family: $Roboto;
+      font-size: .9rem;
+      color: #b7b7b7;
+      transition: all .2s;
+      border: 2px solid transparent;
+
+      &:hover {
+         border: 2px solid $mainColor;
+         margin-left: 10px;
+      }
+
+      p {
+         transition: all 0.2s;
+      }
+
+      img {
+         width: 25px;
+         margin: 0px 10px;
+      }
+   }
+
+   a.active {
+      background-color: $mainColor;
+      color: #979797;
+   }
+}
+
+.side-bar.active {
+   width: 4rem;
+
+   a {
+      pointer-events: none;
+   }
+
+   .btnOpt.active {
+      .btnMenu {
+         background-color: #ffff;
+         height: 2px;
+      }
+      .btnMenu::before {
+         transform: translateY(0rem) rotate(0deg);
+         height: 2px;
+      }
+      .btnMenu::after {
+         transform: translateY(0rem) rotate(0deg);
+         height: 2px;
+      }
+   }
+
+   p {
+      pointer-events: none;
+      width: 0px;
+      opacity: 0;
+   }
+}
