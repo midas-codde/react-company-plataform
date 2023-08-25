@@ -7,10 +7,12 @@
 
    .sttContainer-top {
       width: 100%;
-      height: 300px;
+      height: 400px;
+
 
       .topInfo {
          display: flex;
+         margin-bottom: 60px;
 
          .topInfo-left {
             width: 50%;
@@ -88,10 +90,10 @@
 
             .btn-msg {
                position: absolute;
-               top: 100px;
-               right: 230px;
-               width: 110px;
-               height: 40px;
+               top: 110px;
+               right: 210px;
+               width: 100px;
+               height: 35px;
                background-color: #ffff;
                border-radius: 5px;
                border: 1px solid $gray;
@@ -103,17 +105,17 @@
                transition: all .2s;
 
                &:hover {
-                  top: 115px;
-                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+                  top: 112px;
+                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                }
             }
 
             .btn-sinc {
                position: absolute;
                right: 90px;
-               top: 100px;
-               width: 110px;
-               height: 40px;
+               top: 110px;
+               width: 100px;
+               height: 35px;
                background-color: $secondaryColor;
                border-radius: 5px;
                display: flex;
@@ -124,11 +126,132 @@
                transition: all .2s;
 
                &:hover {
-                  top: 115px;
-                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+                  top: 112px;
+                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+               }
+            }
+         }
+      }
+
+      .topMsg {
+         width: 100%;
+         height: 200px;
+         border-top: 1.5px solid $gray;
+         border-bottom: 1.5px solid $gray;
+         position: relative;
+
+         h2 {
+            width: 130px;
+            position: absolute;
+            top: -15px;
+            background-color: $mainColor;
+            color: $grayDark;
+         }
+
+         .topMsg-container {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+
+            .msgBox {
+               width: 250px;
+               height: 150px;
+               margin-right: 20px;
+               background-color: #fff;
+               border-radius: 10px;
+               border: $gray 1px solid;
+
+               .msgBox-top {
+                  width: 100%;
+                  height: 35%;
+                  display: flex;
+                  padding: 10px;
+
+                  .msgBox-img {
+                     width: 40px;
+                     height: 40px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     overflow: hidden;
+                     border-radius: 10px;
+                  }
+
+                  img {
+                     width: 50px;
+                     border-radius: 5px;
+                  }
+
+                  .msgBox-name {
+                     margin-left: 10px;
+                     font-size: 1.1rem;
+                     font-weight: 600;
+                     color: $grayDark;
+                  }
+
+                  .msgBox-office {
+                     font-size: .8rem;
+                     font-weight: 400;
+                     color: $gray;
+                  }
+
+                  .iconOnline {
+                     width: 8px;
+                     margin-left: 10px;
+                     margin-bottom: 10px;
+                  }
+
+               }
+
+               .msgBox-bottom {
+                  width: 100%;
+                  height: 65%;
+                  padding: 10px;
+                  position: relative;
+
+
+
+                  .msgBox-line {
+                     width: 100%;
+                     height: 2px;
+                     background-color: $gray;
+                     opacity: 50%;
+                     margin-bottom: 10px;
+                  }
+
+                  .msgBox-msg {
+                     font-size: .8rem;
+                     font-weight: 300;
+                  }
+
+                  .msgBox-btn {
+                     width: 65px;
+                     height: 20px;
+                     background-color: $grayDark;
+                     border-radius: 5px;
+                     position: absolute;
+                     right: 10px;
+                     bottom: 10px;
+                     z-index: 2;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     cursor: pointer;
+                     text-decoration: none;
+
+                     p {
+                        color: #fff;
+                        font-size: .6rem;
+                        font-weight: 300;
+                     }
+                  }
                }
             }
          }
       }
    }
+
+   // CONTENT TOP END
 }
