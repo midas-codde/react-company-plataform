@@ -4,6 +4,7 @@
    width: 100%;
    padding: 20px;
    font-family: $Sofia;
+   overflow: hidden;
 
    .sttContainer-top {
       width: 100%;
@@ -154,8 +155,11 @@
             padding: 10px;
             display: flex;
             align-items: center;
+            overflow: auto;
+            overflow-y: hidden;
 
             .msgBox {
+               min-width: 250px;
                width: 250px;
                height: 150px;
                margin-right: 20px;
@@ -252,6 +256,10 @@
          }
       }
    }
-
    // CONTENT TOP END
+   .sttContainer-center {
+      width: 100%;
+      height: 400px;
+      background-color: red;
+   }
 }

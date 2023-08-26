@@ -1,6 +1,7 @@
+import '../styles/Statistics.scss'
 import SideBar from "../components/SideBar"
 import MsgNotf from "../components/MsgNotf"
-import '../styles/Statistics.scss'
+import Balances from '../components/Balances'
 import iconSearch from '../assets/search.svg'
 import iconNotf from '../assets/notf.svg'
 import iconSettings from '../assets/settings.svg'

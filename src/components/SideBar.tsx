@@ -17,7 +17,7 @@ const SideBar = () => {
       setCloseMenu(!closeMenu);
    }
    return (
-      <>
+      <><div className={closeMenu === false ? "side-bar-fixed" : "side-bar-fixed actived"}></div>
          <div className={closeMenu === false ? "side-bar" : "side-bar active"}>
             <div className={closeMenu === false ? "btnOpt" : "btnOpt active"} onClick={() => {
                handleCloseMenu()
