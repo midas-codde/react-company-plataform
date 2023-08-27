@@ -67,7 +67,9 @@ const Statistics = () => {
                   </div>
                </div>
             </div>
-            <div className="sttContainer-center"></div>
+            <div className="sttContainer-center">
+               <Balances />
+            </div>
             <div className="sttContainer-bottom"></div>
          </div>
       </>
