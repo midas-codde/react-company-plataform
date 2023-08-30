@@ -314,7 +314,7 @@
                      }
                   }
 
-                  input:checked ~ p {
+                  input:checked~p {
                      color: #fff;
                   }
 
@@ -331,6 +331,183 @@
 
                   #rad3 {
                      border-radius: 0px 5px 5px 0px;
+                  }
+               }
+            }
+         }
+
+         .balancesBox-center {
+            width: 100%;
+            height: 250px;
+            padding: 20px;
+            position: relative;
+
+            .balancesBox-numbers {
+               width: 100%;
+               height: 95%;
+
+               .number {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 20px;
+               }
+
+               p {
+                  font-size: .7rem;
+                  color: $grayDark;
+                  width: 8%;
+               }
+
+               .box-line {
+                  width: 92%;
+                  height: 5px;
+                  background-color: transparent;
+                  border-top: dashed 2px $gray;
+                  display: inline-block;
+
+               }
+            }
+
+            .balancesBox-values {
+               width: 100%;
+               height: 100%;
+            }
+
+            .balancesBox-value-component {
+               width: 85%;
+               height: 70%;
+               bottom: 50px;
+               display: flex;
+               justify-content: space-evenly;
+               left: 50px;
+               position: absolute;
+
+               .balancesBox-value-numbers {
+                  width: 10px;
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: end;
+                  position: relative;
+
+
+                  .value-number {
+                     width: 100%;
+                     height: 0%;
+                     background: linear-gradient(180deg, #5BF398 0%, #378C59 100%);
+                     margin-bottom: 10px;
+                     position: absolute;
+                     bottom: 0;
+                     transition: all 1s;
+                  }
+
+                  p {
+                     width: 100%;
+                     text-align: center;
+                     position: absolute;
+                     bottom: -15px;
+                     font-size: .7rem;
+                     color: $grayDark;
+                  }
+
+                  .m1 {
+                     height: 60%;
+                  }
+                  .m2 {
+                     height: 30%;
+                  }
+                  .m3 {
+                     height: 65%;
+                  }
+                  .m4 {
+                     height: 50%;
+                  }
+                  .m5 {
+                     height: 90%;
+                  }
+                  .m6 {
+                     height: 20%;
+                  }
+                  .m7 {
+                     height: 35%;
+                  }
+                  .m8 {
+                     height: 37%;
+                  }
+                  .m9 {
+                     height: 70%;
+                  }
+                  .m10 {
+                     height: 15%;
+                  }
+                  .m11 {
+                     height: 90%;
+                  }
+                  .m12 {
+                     height: 27%;
+                  }
+
+                  //days
+
+                  .d1 {
+                     height: 70%;
+                  }
+                  .d2 {
+                     height: 8%;
+                  }
+                  .d3 {
+                     height: 6%;
+                  }
+                  .d4 {
+                     height: 9%;
+                  }
+                  .d5 {
+                     height: 27%;
+                  }
+                  .d6 {
+                     height: 40%;
+                  }
+                  .d7 {
+                     height: 65%;
+                  }
+                  .d8 {
+                     height: 79%;
+                  }
+                  .d9 {
+                     height: 92%;
+                  }
+                  .d10 {
+                     height: 74%;
+                  }
+                  .d11 {
+                     height: 43%;
+                  }
+                  .d12 {
+                     height: 54%;
+                  }
+                  .d13 {
+                     height: 56%;
+                  }
+                  .d14 {
+                     height: 44%;
+                  }
+                  .d15 {
+                     height: 53%;
+                  }
+                  .d16 {
+                     height: 66%;
+                  }
+                  .d17 {
+                     height: 9%;
+                  }
+                  .d18 {
+                     height: 10%;
+                  }
+                  .d19 {
+                     height: 2%;
+                  }
+                  .d20 {
+                     height: 27%;
                   }
                }
             }

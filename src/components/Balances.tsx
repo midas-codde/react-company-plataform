@@ -1,4 +1,5 @@
 import '../styles/Statistics.scss'
+import BalancesGraph1 from '../components/BalancesGraph1'
 
 const Balances = () => {
    return (
@@ -23,7 +24,35 @@ const Balances = () => {
                </div>
             </div>
             <div className="balancesBox-center">
-               
+               <div className="balancesBox-numbers">
+                  <div className="number">
+                     <p>1000</p>
+                     <div className="box-line"></div>
+                  </div>
+                  <div className="number">
+                     <p>800</p>
+                     <div className="box-line"></div>
+                  </div>
+                  <div className="number">
+                     <p>600</p>
+                     <div className="box-line"></div>
+                  </div>
+                  <div className="number">
+                     <p>200</p>
+                     <div className="box-line"></div>
+                  </div>
+                  <div className="number">
+                     <p>100</p>
+                     <div className="box-line"></div>
+                  </div>
+                  <div className="number">
+                     <p>0</p>
+                     <div className="box-line"></div>
+                  </div>
+               </div>
+               <div className="balancesBox-values">
+                  <BalancesGraph1 />
+               </div>
             </div>
          </div>
       </>

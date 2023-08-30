@@ -64,6 +64,54 @@ const Statistics = () => {
                         office="Desenvolvedor"
                         msg="Estou com dificuldade no sistema que o Chef mandou fazer, pode me ajudar?"
                      />
+                     <MsgNotf 
+                        img="../src/images/users/arthur-gerente.jpg"
+                        name="Arthur"
+                        office="Gerente"
+                        msg="Por favor, verifique as alterações que o carlos fez hoje!"
+                     />
+                     <MsgNotf 
+                        img="../src/images/users/lucas-designer.jpg"
+                        name="Lucas"
+                        office="Design"
+                        msg="Oii, Ingrid. Preciso de uma paleta de cor nova pro próximo projeto. O Chef me disse que as cores tem que ser quente, tipo vermelho e etc."
+                     />
+                     <MsgNotf 
+                        img="../src/images/users/amanda-rh.jpg"
+                        name="Amanda"
+                        office="Recursos Humanos"
+                        msg="As folhas de pagamento já foram enviadas para o seu email."
+                     />
+                     <MsgNotf 
+                        img="../src/images/users/jose-dev.jpg"
+                        name="José"
+                        office="Desenvolvedor"
+                        msg="Estou com dificuldade no sistema que o Chef mandou fazer, pode me ajudar?"
+                     />
+                     <MsgNotf 
+                        img="../src/images/users/arthur-gerente.jpg"
+                        name="Arthur"
+                        office="Gerente"
+                        msg="Por favor, verifique as alterações que o carlos fez hoje!"
+                     />
+                     <MsgNotf 
+                        img="../src/images/users/lucas-designer.jpg"
+                        name="Lucas"
+                        office="Design"
+                        msg="Oii, Ingrid. Preciso de uma paleta de cor nova pro próximo projeto. O Chef me disse que as cores tem que ser quente, tipo vermelho e etc."
+                     />
+                     <MsgNotf 
+                        img="../src/images/users/amanda-rh.jpg"
+                        name="Amanda"
+                        office="Recursos Humanos"
+                        msg="As folhas de pagamento já foram enviadas para o seu email."
+                     />
+                     <MsgNotf 
+                        img="../src/images/users/jose-dev.jpg"
+                        name="José"
+                        office="Desenvolvedor"
+                        msg="Estou com dificuldade no sistema que o Chef mandou fazer, pode me ajudar?"
+                     />
                   </div>
                </div>
             </div>
