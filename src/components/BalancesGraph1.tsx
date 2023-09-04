@@ -1,4 +1,3 @@
-
 const BalancesGraph1 = () => {
    return (
       <div className="balancesBox-value-component">

@@ -155,8 +155,19 @@
             padding: 10px;
             display: flex;
             align-items: center;
-            overflow: auto;
+            overflow: scroll;
             overflow-y: hidden;
+
+            &::-webkit-scrollbar {
+               width: 5px;
+               background-color: $primaryColor;
+               border-radius: 10px;
+            }
+   
+            &::-webkit-scrollbar-thumb {
+               background-color: $secondaryColor;
+               border-radius: 10px;
+            }
 
             .msgBox {
                min-width: 250px;

@@ -1,7 +1,27 @@
+import { useState } from 'react'
 import '../styles/Statistics.scss'
 import BalancesGraph1 from '../components/BalancesGraph1'
+import BalancesGraph2 from '../components/BalancesGraph2'
+import BalancesGraph3 from '../components/BalancesGraph3'
 
 const Balances = () => {
+   const [value, setValue] = useState(1)
+
+   const getValue = (props) => {
+      setValue(props)
+   }
+
+   const renderGraph = () => {
+      switch (value) {
+         case 1:
+            return <BalancesGraph1 />
+         case 2:
+            return <BalancesGraph2 />
+         case 3:
+            return <BalancesGraph3 />
+      }
+   }
+
    return (
       <>
          <div className="balancesBox">
@@ -9,15 +29,15 @@ const Balances = () => {
                <h2>Saldos por tempo</h2>
                <p>Aqui você tem detalhes sobre o saldo</p>
                <div className="balancesBox-input">
-                  <div className="input">
-                     <input type="radio" name="rad" id="rad1" />
+                  <div className="input" onClick={() => getValue(1)}>
+                     <input type="radio" name="rad" id="rad1" checked />
                      <p>12 meses</p>
                   </div>
-                  <div className="input">
+                  <div className="input" onClick={() => getValue(2)}>
                      <input type="radio" name="rad" id="rad2" />
-                     <p>30 dias</p>
+                     <p>20 dias</p>
                   </div>
-                  <div className="input">
+                  <div className="input" onClick={() => getValue(3)}>
                      <input type="radio" name="rad" id="rad3" />
                      <p>7 dias</p>
                   </div>
@@ -51,7 +71,7 @@ const Balances = () => {
                   </div>
                </div>
                <div className="balancesBox-values">
-                  <BalancesGraph1 />
+                  {renderGraph()}
                </div>
             </div>
          </div>
