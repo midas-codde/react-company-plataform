@@ -2,6 +2,7 @@ import '../styles/Statistics.scss'
 import SideBar from "../components/SideBar"
 import MsgNotf from "../components/MsgNotf"
 import Balances from '../components/Balances'
+import Transactions from '../components/Transactions'
 import iconSearch from '../assets/search.svg'
 import iconNotf from '../assets/notf.svg'
 import iconSettings from '../assets/settings.svg'
@@ -117,6 +118,7 @@ const Statistics = () => {
             </div>
             <div className="sttContainer-center">
                <Balances />
+               <Transactions />
             </div>
             <div className="sttContainer-bottom"></div>
          </div>
