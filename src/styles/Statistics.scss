@@ -567,68 +567,128 @@
          border: 2px solid $gray;
 
          .transactionsBox-Top {
+            position: relative;
             width: 100%;
             height: 90px;
             padding: 10px;
-         }
 
-         h2 {
-            font-size: 1rem;
-            margin-bottom: 5px;
-            color: $grayDark;
-         }
+            h2 {
+               font-size: 1rem;
+               margin-bottom: 5px;
+               color: $grayDark;
+            }
 
-         p {
-            font-size: .8rem;
-            color: $gray;
-            margin-bottom: 5px;
-         }
+            p {
+               font-size: .8rem;
+               color: $gray;
+               margin-bottom: 5px;
+            }
 
-         .transactionsBox-input {
-            display: flex;
-
-            .input {
-               width: 50px;
-               height: 26px;
-               position: relative;
+            .transactionsBox-input {
                display: flex;
-               align-items: center;
-               justify-content: center;
 
-               input {
-                  appearance: none;
-                  background-color: #ffffff;
-                  width: 100%;
-                  height: 100%;
-                  border: 1px solid $gray;
-                  cursor: pointer;
-                  transition: all .2s;
-                  position: absolute;
+               .input {
+                  width: 50px;
+                  height: 26px;
+                  position: relative;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
 
-                  &:checked {
-                     background-color: $gray;
+                  input {
+                     appearance: none;
+                     background-color: #ffffff;
+                     width: 100%;
+                     height: 100%;
+                     border: 1px solid $gray;
+                     cursor: pointer;
+                     transition: all .2s;
+                     position: absolute;
+
+                     &:checked {
+                        background-color: $gray;
+                     }
+                  }
+
+                  input:checked~p {
+                     color: #fff;
+                  }
+
+                  p {
+                     color: $gray;
+                     z-index: 1;
+                     font-size: .6rem;
+                     pointer-events: none;
+                  }
+
+                  #rad1 {
+                     border-radius: 5px 0px 0px 5px;
+                  }
+
+                  #rad3 {
+                     border-radius: 0px 5px 5px 0px;
                   }
                }
-
-               input:checked~p {
-                  color: #fff;
-               }
-
-               p {
-                  color: $gray;
-                  z-index: 1;
-                  font-size: .6rem;
-                  pointer-events: none;
-               }
-
-               #rad1 {
-                  border-radius: 5px 0px 0px 5px;
-               }
-
-               #rad3 {
-                  border-radius: 0px 5px 5px 0px;
-               }
             }
+         }
+
+         .table-thead {
+            position: absolute;
+            height: 30px;
+            bottom: -55px;
+            left: 0;
+            margin: 0;
+
+            thead {
+               z-index: 2 !important;
+            }
+         }
+
+         table {
+            z-index: 1;
+            width: 100%;
+            height: 50%;
+            margin-top: 50px;
+            gap: none;
+            border-collapse: collapse;
+            overflow: auto;
+            overflow-y: scroll;
+
+            tbody {
+               overflow: scroll;
+               overflow-x: hidden;
+            }
+
+            td {
+               max-width: 50px;
+               padding: 5px;
+            }
+
+            th {
+               background-color: $secondaryColor;
+               width: 100px;
+               height: 30px;
+               color: #ffff;
+               font-size: .8rem;
+            }
+
+            tr {
+               text-align: center;
+               height: 50px;
+               font-size: .8rem;
+               color: $grayDark;
+               border-bottom: 1px solid $grayDark;
+            }
+         }
+
+         .transactionsBox-Bottom {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            overflow: scroll;
+            overflow-x: hidden;
+            padding-top: 10px;
+            margin-top: 4px;
          }
       }
    }
