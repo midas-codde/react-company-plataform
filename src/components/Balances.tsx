@@ -30,15 +30,15 @@ const Balances = () => {
                <p>Aqui você tem detalhes sobre o saldo</p>
                <div className="balancesBox-input">
                   <div className="input" onClick={() => getValue(1)}>
-                     <input type="radio" name="rad" id="rad1" checked />
+                     <input className={value === 1 ? "active":" "} type="radio" name="rad" id="rad1" />
                      <p>12 meses</p>
                   </div>
                   <div className="input" onClick={() => getValue(2)}>
-                     <input type="radio" name="rad" id="rad2" />
+                     <input className={value === 2 ? "active":" "} type="radio" name="rad" id="rad2" />
                      <p>20 dias</p>
                   </div>
                   <div className="input" onClick={() => getValue(3)}>
-                     <input type="radio" name="rad" id="rad3" />
+                     <input className={value === 3 ? "active":" "} type="radio" name="rad" id="rad3" />
                      <p>7 dias</p>
                   </div>
                </div>
