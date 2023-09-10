@@ -1,6 +1,7 @@
 import '../styles/Statistics.scss'
 import SideBar from "../components/SideBar"
 import MsgNotf from "../components/MsgNotf"
+import BoxTransactions from "../components/BoxTransactions"
 import Balances from '../components/Balances'
 import Transactions from '../components/Transactions'
 import iconSearch from '../assets/search.svg'
@@ -120,7 +121,32 @@ const Statistics = () => {
                <Balances />
                <Transactions />
             </div>
-            <div className="sttContainer-bottom"></div>
+            <div className="sttContainer-bottom">
+               <BoxTransactions
+                  name="Receita de hoje"
+                  value="$37,400.35"
+                  percentage="%7,5"
+                  baseValue="30,200.25"
+               />
+               <BoxTransactions
+                  name="Transações"
+                  value="376"
+                  percentage="%55"
+                  baseValue="245"
+               />
+               <BoxTransactions
+                  name="Média transação"
+                  value="$450.20"
+                  percentage="%22"
+                  baseValue="354.20"
+               />
+               <BoxTransactions
+                  name="Cupom de desconto"
+                  value="$99,220.30"
+                  percentage="%12"
+                  baseValue="65,254.20"
+               />
+            </div>
          </div>
       </>
    )
