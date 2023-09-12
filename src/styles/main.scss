@@ -6,6 +6,10 @@
    box-sizing: border-box;
 }
 
+html {
+   overflow-x: hidden;
+}
+
 .App {
    display: flex;
 }
@@ -14,4 +18,23 @@ body {
    height: 100vh;
    width: 100vw;
    background-color: $mainColor;
+}
+
+.error-container {
+   z-index: 10;
+   width: 100vw;
+   height: 100vh;
+   background-color: $primaryColor;
+   color: $grayDark;
+   font-family: $Sofia;
+   position: fixed;
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+
+@media  (max-width: 1180px) {
+   .error-container {
+      display: flex;
+   }
 }

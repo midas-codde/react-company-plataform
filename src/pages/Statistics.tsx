@@ -1,4 +1,5 @@
 import '../styles/Statistics.scss'
+import Error from '../components/monitorError'
 import SideBar from "../components/SideBar"
 import MsgNotf from "../components/MsgNotf"
 import BoxTransactions from "../components/BoxTransactions"
@@ -12,6 +13,7 @@ import iconUser from '../images/users/ingrid.png'
 const Statistics = () => {
    return (
       <>
+         <Error />
          <SideBar />
          <div className="sttContainer">
             <div className="sttContainer-top">
@@ -42,73 +44,73 @@ const Statistics = () => {
                <div className="topMsg">
                   <h2>Mensagens</h2>
                   <div className="topMsg-container">
-                     <MsgNotf 
+                     <MsgNotf
                         img="../src/images/users/arthur-gerente.jpg"
                         name="Arthur"
                         office="Gerente"
                         msg="Por favor, verifique as alterações que o carlos fez hoje!"
                      />
-                     <MsgNotf 
+                     <MsgNotf
                         img="../src/images/users/lucas-designer.jpg"
                         name="Lucas"
                         office="Design"
                         msg="Oii, Ingrid. Preciso de uma paleta de cor nova pro próximo projeto. O Chef me disse que as cores tem que ser quente, tipo vermelho e etc."
                      />
-                     <MsgNotf 
+                     <MsgNotf
                         img="../src/images/users/amanda-rh.jpg"
                         name="Amanda"
                         office="Recursos Humanos"
                         msg="As folhas de pagamento já foram enviadas para o seu email."
                      />
-                     <MsgNotf 
+                     <MsgNotf
                         img="../src/images/users/jose-dev.jpg"
                         name="José"
                         office="Desenvolvedor"
                         msg="Estou com dificuldade no sistema que o Chef mandou fazer, pode me ajudar?"
                      />
-                     <MsgNotf 
+                     <MsgNotf
                         img="../src/images/users/arthur-gerente.jpg"
                         name="Arthur"
                         office="Gerente"
                         msg="Por favor, verifique as alterações que o carlos fez hoje!"
                      />
-                     <MsgNotf 
+                     <MsgNotf
                         img="../src/images/users/lucas-designer.jpg"
                         name="Lucas"
                         office="Design"
                         msg="Oii, Ingrid. Preciso de uma paleta de cor nova pro próximo projeto. O Chef me disse que as cores tem que ser quente, tipo vermelho e etc."
                      />
-                     <MsgNotf 
+                     <MsgNotf
                         img="../src/images/users/amanda-rh.jpg"
                         name="Amanda"
                         office="Recursos Humanos"
                         msg="As folhas de pagamento já foram enviadas para o seu email."
                      />
-                     <MsgNotf 
+                     <MsgNotf
                         img="../src/images/users/jose-dev.jpg"
                         name="José"
                         office="Desenvolvedor"
                         msg="Estou com dificuldade no sistema que o Chef mandou fazer, pode me ajudar?"
                      />
-                     <MsgNotf 
+                     <MsgNotf
                         img="../src/images/users/arthur-gerente.jpg"
                         name="Arthur"
                         office="Gerente"
                         msg="Por favor, verifique as alterações que o carlos fez hoje!"
                      />
-                     <MsgNotf 
+                     <MsgNotf
                         img="../src/images/users/lucas-designer.jpg"
                         name="Lucas"
                         office="Design"
                         msg="Oii, Ingrid. Preciso de uma paleta de cor nova pro próximo projeto. O Chef me disse que as cores tem que ser quente, tipo vermelho e etc."
                      />
-                     <MsgNotf 
+                     <MsgNotf
                         img="../src/images/users/amanda-rh.jpg"
                         name="Amanda"
                         office="Recursos Humanos"
                         msg="As folhas de pagamento já foram enviadas para o seu email."
                      />
-                     <MsgNotf 
+                     <MsgNotf
                         img="../src/images/users/jose-dev.jpg"
                         name="José"
                         office="Desenvolvedor"
