@@ -1,4 +1,64 @@
-.inputText {
-   width: 100px;
-   height: 20px;
+@import '../styles/variables.scss';
+
+.chatContainer {
+   width: 100%;
+   padding: 20px;
+   font-family: $Sofia;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   .chatContainer-container {
+      width: 95%;
+      height: 95%;
+      border: 2px solid $secondaryColor;
+   }
+
+   .chatContainer-left {
+      width: 250px;
+      height: 100%;
+      background-color: $secondaryColor;
+      border-radius: 0px 20px 20px 0px;
+      display: flex;
+      flex-direction: column;
+      padding: 0px 15px;
+
+      .chatContainer-top {
+         width: 100%;
+         height: 150px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         .userIcon {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            background-size: 100px;
+            background-image: url("../images/users/Ingrid1.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+         }
+      }
+
+      input {
+         width: 100%;
+         height: 30px;
+         padding-left: 30px;
+         border-radius: 10px;
+         border: none;
+         appearance: none;
+         background-color: #ffffff75;
+         color: #ffff;
+         font-size: 1rem;
+
+         &::placeholder {
+            color: #ffff;
+            font-size: 1rem;
+            font-weight: 100;
+         }
+      }
+
+   }
 }
