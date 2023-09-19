@@ -5,7 +5,7 @@ import "../styles/Chat.scss"
 import { useCallback, useState } from "react"
 
 const Chat = () => {
-   const [lista, setLista] = useState<string[]>([]);
+   const [msg, setMsg] = useState<string[]>([]);
 
    const handleInputKeyDown: React.KeyboardEventHandler<HTMLInputElement> = useCallback((e) => {
       if (e.key === 'Enter') {
@@ -15,8 +15,8 @@ const Chat = () => {
 
          e.currentTarget.value = ""
 
-         setLista((oldLista) => {
-            return [...oldLista, value]
+         setMsg((oldMsg) => {
+            return [...oldMsg, value]
          });
       }
    }, []);
@@ -32,7 +32,7 @@ const Chat = () => {
          />
 
          <ul>
-            {lista.map((value) => {
+            {msg.map((value) => {
                return <li key={value}>{value}</li>
             })}
          </ul>

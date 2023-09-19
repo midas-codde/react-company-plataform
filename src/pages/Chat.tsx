@@ -1,6 +1,7 @@
 import SideBar from "../components/SideBar"
 import Error from '../components/monitorError'
 import "../styles/Chat.scss"
+import ChatUser from "../components/ChatUser"
 
 
 const Chat = () => {
@@ -15,6 +16,9 @@ const Chat = () => {
                      <div className="userIcon"></div>
                   </div>
                      <input type="text" placeholder="Procurar" name="" id="" />
+               </div>
+               <div className="chatContainer-right">
+                  <ChatUser name="Arthur" />
                </div>
             </div>
          </div>
