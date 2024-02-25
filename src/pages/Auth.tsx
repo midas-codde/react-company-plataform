@@ -58,7 +58,7 @@ const Auth = () => {
                </div>
                <div className="container-img">
                   <div className="container-right">
-                     <p>Entre em nossa comunidade de densenvolvedores</p>
+                     <p>Entre em nossa comunidade de desenvolvedores</p>
                   </div>
                </div>
             </div>

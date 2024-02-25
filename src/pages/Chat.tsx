@@ -2,6 +2,7 @@ import SideBar from "../components/SideBar"
 import Error from '../components/monitorError'
 import "../styles/Chat.scss"
 import ChatUser from "../components/ChatUser"
+import SearchSVG from "../assets/search.svg"
 
 
 const Chat = () => {
@@ -15,10 +16,13 @@ const Chat = () => {
                   <div className="chatContainer-top">
                      <div className="userIcon"></div>
                   </div>
+                  <div className="chatContainer-input">
+                     <img src={SearchSVG} alt="" />
                      <input type="text" placeholder="Procurar" name="" id="" />
+                  </div>
                </div>
                <div className="chatContainer-right">
-                  <ChatUser name="Arthur" />
+                  <ChatUser name="Lucas" />
                </div>
             </div>
          </div>
